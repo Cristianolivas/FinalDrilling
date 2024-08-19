@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+section {
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+
+article {
+  padding-inline: 4rem;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#contactame {
+  background-image: url("../image/240_F_472158295_Feh1hXYleRoeczq1jLebPX16eHinUbAz.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#proyectos {
+  background-color: black;
+}
+
+.navbar-brand img {
+  width: 4rem;
+}
+
+.carousel-item img {
+  margin: auto;
+  max-width: 50vw;
+  height: 50vh;
+  border-radius: 30px;
+  border: chartreuse solid 5px;
+}

@@ -1,11 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/image/portafolio-programador.jpg.webp" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Introducción</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencias">Experiencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactame">Contáctame</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="introduccion">
+        <h1>Cristián Enrique Olivas Soto</h1>
+        <p>
+          Me caracterizo por ser una persona esforzada, paciente, con gran
+          habilidad de escucha, emprendedor y con metas. Soy respetuoso,
+          organizado, con tolerancia a la frustración, resiliente, honesto,
+          responsable, con iniciativa y sé trabajar bajo presión. Me encanta la
+          profesión que estudié (análisis y programación de sistemas). Ahí pude
+          conocer distintos lenguajes como Java Script, Java, Type Script, SQL,
+          también he aprendido sobre Css, Bootstrap, Android studio, visual
+          studio code, metodología agiles scrum.
+        </p>
+      </section>
+      <section id="experiencias"></section>
+      <h2>Experiencias</h2>
+
+      <!-- Carrusel -->
+      <section id="proyectos">
+        <article>
+          <h2>Proyectos</h2>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/image/matrix-7178709_1280.webp"
+                  class="d-block"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/image/technology-7111804_1280.jpg"
+                  class="d-block"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/image/technology-7111801_1280.jpg"
+                  class="d-block"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Carrusel -->
+
+      <section id="contactame">
+        <article>
+          <h2>Contáctame</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Ingresa una contraseña de 6 a 8 caracteres alfanumérica"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Ingresa tu direción particular"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Dpto/Block</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Ingresa número departamento, torre, block, casa."
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity" required />
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Región</label>
+              <select id="inputState" class="form-select">
+                <option selected>Busca tu región</option>
+                <option>Metropolitana</option>
+                <option>Coquimbo</option>
+                <option>Los Lagos</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="inputZip" />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Estoy de acuerdo
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-warning fixed-bottom">
+      <p>Página diseñada por Cristián Olivas Soto agosto 2024.</p>
+    </footer>
+    <script src="./assets/js/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
