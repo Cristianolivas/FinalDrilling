@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
+#introduccion {
+  color: #fff;
+  background-color: black;
+}
+
 section {
   min-height: 100vh;
   padding-top: 4rem;
@@ -23,6 +28,7 @@ p {
 }
 
 #proyectos {
+  color: #fff;
   background-color: black;
 }
 
@@ -36,4 +42,8 @@ p {
   height: 50vh;
   border-radius: 30px;
   border: chartreuse solid 5px;
+}
+
+.modal-body img {
+  width: 100%;
 }

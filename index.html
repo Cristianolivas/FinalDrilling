@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+      <nav class="navbar navbar-expand-lg bg-info fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img src="./assets/image/portafolio-programador.jpg.webp" alt=""
@@ -52,8 +52,10 @@
       </nav>
     </header>
     <main>
-      <section id="introduccion">
+      <section style="text-align: center" id="introduccion">
+        <hr />
         <h1>Cristián Enrique Olivas Soto</h1>
+        <hr />
         <p>
           Me caracterizo por ser una persona esforzada, paciente, con gran
           habilidad de escucha, emprendedor y con metas. Soy respetuoso,
@@ -65,13 +67,23 @@
           studio code, metodología agiles scrum.
         </p>
       </section>
-      <section id="experiencias"></section>
-      <h2>Experiencias</h2>
+      <section style="text-align: center" id="experiencias">
+        <hr />
+        <h2>Experiencias</h2>
+        <hr />
+        <p>
+          Desarrollador titulado en el año 2023 buscando su primera experiencia
+          laboral, sin embargo, cuando realiza su práctica laboral pudo conocer
+          más a fondo el mundo del desarrollo.
+        </p>
+      </section>
 
       <!-- Carrusel -->
       <section id="proyectos">
         <article>
+          <hr />
           <h2>Proyectos</h2>
+          <hr />
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -79,6 +91,9 @@
                   src="./assets/image/matrix-7178709_1280.webp"
                   class="d-block"
                   alt="..."
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="modales(0)"
                 />
               </div>
               <div class="carousel-item">
@@ -86,6 +101,9 @@
                   src="./assets/image/technology-7111804_1280.jpg"
                   class="d-block"
                   alt="..."
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="modales(1)"
                 />
               </div>
               <div class="carousel-item">
@@ -93,6 +111,9 @@
                   src="./assets/image/technology-7111801_1280.jpg"
                   class="d-block"
                   alt="..."
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="modales(2)"
                 />
               </div>
             </div>
@@ -122,8 +143,52 @@
             </button>
           </div>
         </article>
+        <!-- Fin Carrusel -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="..." alt="" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="https://www.google.com"
+                  ><button type="button" class="btn btn-primary">
+                    Repo Github
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fin modal -->
       </section>
-      <!-- Fin Carrusel -->
 
       <section id="contactame">
         <article>
@@ -183,7 +248,7 @@
             </div>
             <div class="col-md-2">
               <label for="inputZip" class="form-label">Código Postal</label>
-              <input type="text" class="form-control" id="inputZip" />
+              <input type="text" class="form-control" id="inputZip" required />
             </div>
             <div class="col-12">
               <div class="form-check">
@@ -198,7 +263,9 @@
               </div>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit" class="btn btn-primary" required>
+                Enviar
+              </button>
             </div>
           </form>
         </article>
